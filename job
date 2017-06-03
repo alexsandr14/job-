@@ -1,0 +1,30 @@
+a=5
+b=12
+a, b = b, a
+print(a, b)
+def rever(a):
+    out = a.upper()[::-1]
+    
+    return out
+rever("Hello Word")
+
+
+
+def bigger(a):
+    out = len(a.split())
+    l = [i for i in a.split('.') if i.strip()]
+    print(len(l))
+    
+    print(out)
+bigger('Hello World. Python is cool.')
+
+def number():
+    b = int(input())
+    c = 0
+    d = 1
+    while( b > 0):
+       print( b % 10 )
+       b = b / 10
+       c = c + b
+       d = d * b
+    return (c, d)
